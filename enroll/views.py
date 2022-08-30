@@ -21,7 +21,7 @@ def add_show(request):
         fm=studentregistration()
     stud=user.objects.all()
 
-    return render(request,'enroll/Add_Show.html',{'form':fm,'stu':stud})
+    return render(request,'enroll/Add_Show.html',{'form':fm,'stud':stud})
 
 #this function delete the data
 def delete_data(request,id):
